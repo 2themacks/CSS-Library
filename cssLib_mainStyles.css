@@ -1,0 +1,227 @@
+/*TYPOGRAPHY
+----- this is for the paragraph and smaller text
+font-family: 'Old Standard TT', serif;    (google fonts)
+----- this is for the headings and titles on the page
+Bebas Neue.otf
+*/
+
+
+
+@font-face {
+  font-family: BebasNeue;
+  src: url("BebasNeue.otf");
+}
+
+header {
+  margin: auto;
+  text-transform: uppercase;
+  font-weight: 550;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+nav {
+  align-items: center;
+  display: flex;
+  text-align: center;
+  justify-content: space-between;
+  border: solid 1px black;
+  padding: 1em;
+}
+.navLinkDiv {
+  display: flex;
+}
+.navLink {
+  display: inline-flex;
+  border: solid 1px black;
+  margin: 1em;
+  width: 75px;
+  text-align: center;
+  color: black;
+}
+.logoDiv {
+  display: flex;
+  border: solid 2px black;
+}
+.logo {
+  height: 100px;
+  width: 100px;
+  display: inline-block;
+  float: left;
+  padding: 15px;
+}
+a {
+  text-decoration: none;
+  width: 100%;
+  height: 100%;
+}
+a:hover {
+  color: white;
+  background-color: lightGrey;
+}
+
+.grid {
+  box-sizing: border-box;
+  height: auto;
+  margin: 5px;
+  padding: 5px;
+}
+.grid4 {
+  width: 33%;
+  min-height: 400px;
+  float: left;
+  padding: 1em;
+  box-sizing: border-box;
+  border: solid 1px black;
+}
+.grid2 {
+  width: 16.66%;
+  min-height: 150px;
+  float: left;
+  box-sizing: border-box;
+  min-height: 40px;
+  border: solid 1px black;
+}
+.grid6 {
+  width: 50%;
+  border: solid 1px black;
+  min-height: 50px;
+  float: left;
+  box-sizing: border-box;
+  min-height: 50px;
+}
+
+
+footer {
+  margin: auto;
+  padding: 1em 2em;
+  font-size: 2rem;
+  text-transform: capitalize;
+  text-align: center;
+  font-family: 'Old Standard TT', serif;
+  font-weight: 550;
+  color: white;
+  background-color: black;
+}
+
+h1 {
+  font-size: 6rem;
+  line-height: 2em;
+  letter-spacing: .12em;
+  font-family: 'BebasNeue';
+}
+h2 {
+  font-size: 4.25rem;
+  line-height: 1.5em;
+  letter-spacing: .15em;
+  font-family: 'BebasNeue';
+}
+
+h3 {
+  font-size: 3rem;
+}
+h4 {
+  font-size: 2.75rem;
+}
+h5 {
+  font-size: 2.5rem;
+}
+h6 {
+  font-size: 2rem;
+}
+
+h1, h2, h3, h4, h5, h6  {
+  margin: auto;
+  width: 85%;
+  font-weight: 700;
+  line-height: 1.5em;
+  letter-spacing: .15em;
+  font-family: 'BebasNeue';
+}
+
+h3, h4, h5, h6 {
+  line-height: 1.4em;
+  width: 85%;
+  margin: auto;
+  letter-spacing: .1em;
+  font-family: 'BebasNeue';
+}
+
+p, a {
+  line-height: 1.5em;
+  width: 75%;
+  margin: 1em auto;
+  font-family: sans-serif;
+}
+
+blockquote {
+  font-family: 'Old Standard TT', serif;
+  width: 50%;
+  line-height: 2em;
+  /*border-left: solid 5px black;*/
+  margin: 2em auto;
+  padding: 1em 2em;
+  font-style: italic;
+  font-size: 1.2em;
+  font-weight: 500;
+}
+
+ul, ol {
+  line-height: 2em;
+  width: 70%;
+  margin: 1em auto;
+  font-family: 'Old Standard TT', serif;
+}
+
+li {
+    list-style-type: square;
+    line-height: 1.5em;
+    margin-left: 2em;
+    font-family: 'Old Standard TT', serif;
+}
+
+table {
+  padding: 1em;
+  width: 90%;
+  margin: 3em;
+
+}
+
+tr, tbody, td {
+  margin: 1em;
+  line-height: 1.5em;
+  border: solid 1px black;
+}
+
+table td {
+  padding: .2em;
+  border: solid 1px black;
+  font-family: 'Old Standard TT', serif;
+}
+th {
+  font-size: 1.5em;
+  text-transform: uppercase;
+  line-height: 1.5em;
+  border: solid 1px black;
+}
+
+
+label {
+  line-height: 2em;
+  font-family: sans-serif;
+}
+
+input {
+  margin: 1em;
+}
+legend {
+  font-size: 2.5em;
+  line-height: 2em;
+}
+ form {
+   width: 70%;
+   margin: 3em auto;
+   padding: 1em;
+   border: solid 1px black;
+ }
