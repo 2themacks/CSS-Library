@@ -5,154 +5,18 @@ font-family: 'Old Standard TT', serif;    (google fonts)
 Bebas Neue.otf
 */
 
-
-
+/*TYPOGRAPHY*/
 @font-face {
   font-family: BebasNeue;
   src: url("BebasNeue.otf");
 }
 
-header {
-  margin: auto;
-  display: flex;
-  flex-direction: column;
-  text-align: center;
-  width: 100%;
-  height: 500px;
-  background-image: url(background_img.jpeg);
-  background-size: 1500px;
-  background-position: center;
-  background-repeat: no-repeat;
-}
-
-.header_text {
-  color: white;
-  margin: auto;
-}
-
+/*HEADINGS*/
 h1 {
   font-size: 6rem;
-  line-height: 2em;
-  letter-spacing: .12em;
-  font-family: 'BebasNeue';
-}
-
-
-nav {
-  align-items: center;
-  display: flex;
-  text-align: center;
-  justify-content: space-between;
-  border: solid 1px black;
-  position: fixed;
-  width: 100%;
-  background-color: #AFC1CA;
-}
-.navLinkDiv {
-  display: flex;
-}
-.navLink {
-  display: inline-flex;
-  border: solid 1px black;
-  margin: 1em;
-  width: 75px;
-  text-align: center;
-  color: black;
-}
-.logoDiv {
-  display: flex;
-}
-.logo {
-  height: 100px;
-  width: 100px;
-  display: inline-block;
-  float: left;
-}
-a {
-  text-decoration: none;
-  width: 100%;
-  height: 100%;
-}
-a:hover {
-  color: white;
-  background-color: lightGrey;
-}
-
-.content_body {
-  display: flex;
-  width: 100;
-}
-.content_left {
-  flex: 2;
-}
-.content_center {
-  flex: 8;
-  background-color: #1A3942;
-}
-
-.section_container {
-  background-color: #AFC1CA;
-  width: 110%;
-  margin: 3em 2em;
-}
-
-.content_right {
-  flex: 2;
-}
-.grid {
-  box-sizing: border-box;
-  height: auto;
-  margin: 5px;
-  padding: 5px;
-}
-.grid4 {
-  width: 33.33%;
-  min-height: 400px;
-  float: left;
-  padding: 1em;
-  box-sizing: border-box;
-  border: solid 1px black;
-}
-.grid2 {
-  width: 16.66%;
-  min-height: 150px;
-  float: left;
-  box-sizing: border-box;
-  min-height: 40px;
-  border: solid 1px black;
-}
-.grid6 {
-  width: 50%;
-  border: solid 1px black;
-  min-height: 50px;
-  float: left;
-  box-sizing: border-box;
-  min-height: 50px;
-}
-
-
-footer {
-  margin: auto;
-  padding: 1em 2em;
-  font-size: 2rem;
-  text-transform: capitalize;
-  text-align: center;
-  font-family: 'Old Standard TT', serif;
-  font-weight: 550;
-  border: solid 1px black;
-}
-
-h1 {
-  font-size: 6rem;
-  line-height: 2em;
-  letter-spacing: .12em;
-  font-family: 'BebasNeue';
 }
 h2 {
   font-size: 4.25rem;
-  line-height: 1.5em;
-  letter-spacing: .15em;
-  font-family: 'BebasNeue';
 }
 
 h3 {
@@ -167,23 +31,15 @@ h5 {
 h6 {
   font-size: 2rem;
 }
-
 h1, h2, h3, h4, h5, h6  {
   margin: auto;
   width: 85%;
   font-weight: 700;
   line-height: 1.5em;
-  letter-spacing: .15em;
-  font-family: 'BebasNeue';
-}
-
-h3, h4, h5, h6 {
-  line-height: 1.4em;
-  width: 85%;
-  margin: auto;
   letter-spacing: .1em;
   font-family: 'BebasNeue';
 }
+
 
 p, a {
   line-height: 1.5em;
@@ -216,6 +72,172 @@ li {
     line-height: 1.5em;
     margin-left: 2em;
     font-family: 'Old Standard TT', serif;
+}
+
+nav {
+  align-items: center;
+  display: flex;
+  text-align: center;
+  justify-content: space-between;
+  position: fixed;
+  width: 100%;
+  background-color: #252528;
+  color: white;
+}
+.navLinkDiv {
+  display: flex;
+  color: white;
+}
+.navLink {
+  display: inline-flex;
+  margin: 1em;
+  width: 75px;
+  text-align: center;
+  color: white;
+}
+
+/*DROPDOWN MENU*/
+.dropdown {
+    float: left;
+    overflow: hidden;
+    display: inline-flex;
+}
+
+.dropdown .dropbtn {
+    font-size: 16px;
+    border: none;
+    outline: none;
+    color: white;
+    padding: 14px 16px;
+    background-color: inherit;
+    display: inline-flex;
+}
+.dropdown:hover .dropbtn {
+    background-color: #D5DDE4;
+}
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 100px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 2;
+}
+.dropdown-content a {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+    width: 100%;
+}
+.dropdown-content a:hover {
+    background-color: #D5DDE4;
+    width: 100%;
+}
+.dropdown:hover .dropdown-content {
+    display: inline-flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+header {
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  width: 100%;
+  height: 500px;
+  background-image: url(background_img.jpeg);
+  background-size: 1500px;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.header_text {
+  color: white;
+  margin: auto;
+}
+
+.logoDiv {
+  display: flex;
+}
+.logo {
+  height: 100px;
+  width: 100px;
+  display: inline-block;
+  float: left;
+}
+a {
+  text-decoration: none;
+  width: 100%;
+  height: 100%;
+  color: white;
+}
+a:hover {
+  color: white;
+}
+a:visited {
+  color: #57817C;
+}
+.content_body {
+  display: flex;
+  width: 100;
+}
+.content_left {
+  flex: 2;
+}
+.content_center {
+  flex: 8;
+  background-color: #1A3942;
+}
+
+.section_container {
+  background-color: #D5DDE4;
+  width: 110%;
+  margin: 3em 2em;
+  box-shadow: 10px 10px 10px #252528;
+  padding: 1em;
+}
+
+.content_right {
+  flex: 2;
+}
+.grid {
+  height: auto;
+  margin: 5px;
+  padding: 5px;
+}
+.grid4 {
+  width: 33.33%;
+  min-height: 200px;
+  float: left;
+  padding: 1em;
+  box-sizing: border-box;
+}
+.grid2 {
+  width: 16.66%;
+  float: left;
+  box-sizing: border-box;
+  min-height: 40px;
+}
+
+footer a {
+  color: white;
+}
+footer {
+  margin: auto;
+  padding: 1em;
+  text-align: center;
+  font-family: 'Old Standard TT', serif;
+  height: inherit;
+  align-items: center;
+  justify-content: space-between;
+  height: 400px;
+  background-color: #252528;
+  color: white;
+  bottom: 0;
 }
 
 table {
@@ -258,7 +280,20 @@ legend {
 }
  form {
    width: 70%;
-   margin: 3em auto;
+   margin: auto;
    padding: 1em;
    border: solid 1px black;
  }
+.button {
+  font-size: 16px;
+  border: none;
+  color: white;
+  padding: 2em;
+  background-color: inherit;
+  display: inline-flex;
+  align-items: center;
+  text-align: center
+}
+.button:hover {
+  background-color: #252528;
+}
